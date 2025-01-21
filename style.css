@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-image: linear-gradient(to top, rgb(198, 198, 198), white);
+}
+.Header {
+  display: flex;
+  background-color: rgb(195, 195, 195);
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  user-select: none;
+}
+.Header p {
+  margin-right: 100px;
+}
+.Header h1 {
+  margin-left: 25px;
+}
+table {
+  border: 1.75px solid;
+  border-radius: 1%;
+  width: 450px;
+  height: 250px;
+  background-image: radial-gradient(white, rgb(180, 180, 180));
+}
+table tr {
+  text-align: center;
+}
+.Box {
+  width: 700px;
+  height: 700px;
+  margin: 175px auto;
+  background-color: rgb(195, 195, 195);
+  border-radius: 10%;
+  justify-items: center;
+}
+#Prompt {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 100px;
+  user-select: none;
+}
+#Input {
+  margin: auto;
+  width: 500px;
+  height: 100px;
+  border: none;
+  font-size: 2rem;
+}
+.Submit {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  border-radius: 100%;
+  background-color: rgb(0, 194, 0);
+  color: white;
+}
+
+/* --SCALE TO DEVICE!!!--- */
+@media only screen and (max-width: 700px) {
+  .Header p {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .Box {
+    width: 500px;
+  }
+  .Submit {
+    width: 60px;
+    height: 60px;
+  }
+  #Input {
+    height: 60px;
+    width: 300px;
+  }
+}

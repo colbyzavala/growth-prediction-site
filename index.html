@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height Predict</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div class="Header">
+      <h1>HeightPD</h1>
+      <p>Predict your childs height!</p>
+    </div>
+    <div class="Box">
+      <div class="Interactable">
+        <h1 id="Prompt">Prompt</h1>
+        <input
+          type="text"
+          placeholder="Enter here."
+          id="Input"
+          autocomplete="off"
+          name="inputField"
+        />
+        <button
+          class="Submit"
+          onclick="OnSubmit(document.getElementById('Input').value)"
+          type="submit"
+        >
+          ✓
+        </button>
+      </div>
+      <div class="Information" style="margin-top: 50px">
+        <h1 style="text-align: center; margin-bottom: 10px">
+          Information listed here:
+        </h1>
+        <table id="MainTable">
+          <tr>
+            <th>Your Info</th>
+            <th>Mother's Info</th>
+            <th>Father's Info</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
